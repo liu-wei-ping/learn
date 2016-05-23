@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <!-- 这个配置使全局的映射器启用或禁用缓存 -->
+        <setting name="cacheEnabled" value="true"/>
+        <!-- 全局启用或禁用延迟加载 -->
+        <setting name="lazyLoadingEnabled" value="false"/>
+        <!-- 启动 是否会完全加载任意属 -->
+        <setting name="aggressiveLazyLoading" value="true"/>
+        <!-- 允许或不允许多种结果集从一个单独的语句中返回 -->
+        <setting name="multipleResultSetsEnabled" value="true"/>
+        <!-- 允许JDBC支持生成的键 -->
+        <setting name="useGeneratedKeys" value="false"/>
+        <!-- 指定MyBatis如何自动映射列到字段/属性 NONE PARTIAL FULL -->
+        <setting name="autoMappingBehavior" value="PARTIAL"/>
+        <!-- 使用列标签代替列名 -->
+        <setting name="useColumnLabel" value="true"/>
+        <!-- 配置默认的执行器  SIMPLE  REUSE  BATCH -->
+        <setting name="defaultExecutorType" value="SIMPLE"/>
+        <!-- 是否开启自动驼峰命名规则 -->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!-- 设置一个时限，以决定让驱动器等待数据库回应的多长时间为超时 -->
+        <setting name="defaultStatementTimeout" value="25000"/>
+    </settings>
+    <!-- 命名空间 -->
+    <typeAliases>
+        <package name="com.learn.site.entity"/>
+    </typeAliases>
+    <!-- 映射map -->
+    <mappers>
+    </mappers>
+</configuration>
